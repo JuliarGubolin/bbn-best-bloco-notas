@@ -17,12 +17,21 @@ export default StyleSheet.create({
       padding: 10,
       borderRadius: 4,
       borderColor: "#02a9f7",
+      backgroundColor: "#fff"
     },
     logo: {
       height: 150,
       width: 150,
+      borderRadius: 10
     },
     placeholder:{
       color:"#000"
     },
+    underLineText: {
+      marginTop: 10,
+      fontSize: 15,
+      color: 'blue',
+      fontWeight: 'bold',
+      textAlign: 'center',
+    }
   });
