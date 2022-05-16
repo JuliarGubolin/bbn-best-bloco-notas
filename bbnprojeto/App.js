@@ -9,7 +9,7 @@ export default function App() {
     <View style={estilos.container}>
       <Image style={estilos.logo} source={require("./source/images/Logo_Teste.jpg")} />
       <View>
-        <Text style={{fontWeight: 'bold', fontSize: 30, color:'black', 
+        <Text style={{fontWeight: 'bold', fontSize: 28, color:'black', 
         width: 300,
         textAlign:'center'}}>
           Best Bloco de Notas</Text>
@@ -17,11 +17,13 @@ export default function App() {
       </View>
       <View style={{backgroundColor:'#EEEEEE', borderRadius:10, padding:12, margin:8}}>
         <Text style={{fontWeight: 'bold', fontSize: 15, color:'black'}}> E-mail:</Text>
-        <TextInput style={estilos.input} placeholder="Insira seu e-mail" />
+        <TextInput style={estilos.input} placeholder="Insira seu e-mail" 
+        placeholderTextColor={'#77778D'} />
         <Text style={{fontWeight: 'bold', fontSize: 15, color:'black'}}> Senha:</Text>
         <TextInput
           style={estilos.input}
           placeholder="Senha"
+          placeholderTextColor={'#77778D'}
           secureTextEntry={true}
         />
         <View style={{alignItems:'center'}}>
@@ -32,7 +34,7 @@ export default function App() {
           </TouchableOpacity>
         </View>
         <View style={{flexDirection:'row', justifyContent:'flex-end', marginTop:10, marginRight:12}}>
-          <Text>Esqueceu a senha?</Text>
+          <Text style={{color:'#77778D'}}>Esqueceu a senha?</Text>
         </View>
       </View>
       <View style={{width:'100%', flexDirection:'row', justifyContent:'space-evenly'}}>
