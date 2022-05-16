@@ -7,7 +7,7 @@ const image = { uri: "https://reactjs.org/logo-og.png" };
 export default function App() {
   return (
     <View style={estilos.container}>
-      <Image style={estilos.logo} source={require("./source/images/flor.jpg")} />
+      <Image style={estilos.logo} source={require("./source/images/Logo_Teste.jpg")} />
       <TextInput style={estilos.input} placeholder="Email" placeholderTextColor="#000" />
       <TextInput
         style={estilos.input}
