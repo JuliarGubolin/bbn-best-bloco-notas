@@ -74,7 +74,7 @@ export default StyleSheet.create({
       marginRight:12
     },
     txtEsqueceuSenha:{
-      color:'#77778D'
+      color: '#02a9f7'
     },
     botaoEntrar:{
       color:'white', 
@@ -82,7 +82,8 @@ export default StyleSheet.create({
       textAlign:'center', 
       height:30, 
       width:260, 
-      textAlignVertical:'center'
+      textAlignVertical:'center',
+      borderRadius:3
     },
     botaoPrincipal:{
       fontSize: 50,
