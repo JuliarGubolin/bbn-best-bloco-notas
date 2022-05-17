@@ -1,6 +1,7 @@
 import React from "react";
 import { View, TextInput, Image, TouchableOpacity, Text } from "react-native";
 import estilos from './styles/estilo.js'
+import { Button } from 'react-native-paper';
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
           <Text style={estilos.underLineText}>Cadastre-se</Text>
         </TouchableOpacity>
       </View>
+      <Button icon="camera" mode="contained">net</Button>
     </View>
   );
 }
