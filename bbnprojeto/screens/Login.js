@@ -1,13 +1,23 @@
-import React from "react";
+import React, { Component } from 'react';
 import { View, TextInput, Image, TouchableOpacity, Text } from "react-native";
-import estilos from './styles/estilo.js'
+import estilos from '../styles/estilo.js'
 
-export default function App() {
+export default function Login() {
+  
+  /*constructor(props){
+    super(props)
+    this.irEntrou = this.irEntrou.bind(this)
+  }
+
+  irSobre(){
+    this.props.navigation.navigate("Sobre")
+  }*/
+
   return (
     <View style={estilos.container}>
       <Image 
         style={estilos.logo} 
-        source={require("./source/images/Logo_Teste.jpg")} 
+        source={require("../source/images/Logo_Teste.jpg")} 
       />
       <View>
         <Text style={estilos.titulo}>Best Bloco de Notas</Text>
@@ -27,7 +37,7 @@ export default function App() {
           secureTextEntry={true}
         />
         <View style={{alignItems:'center'}}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => console.log('Pressionado')}>
             <Text style={estilos.botaoEntrar}>
             Entrar</Text>
           </TouchableOpacity>

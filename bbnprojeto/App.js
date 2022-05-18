@@ -1,48 +1,22 @@
-import React from "react";
-import { View, TextInput, Image, TouchableOpacity, Text } from "react-native";
-import estilos from './styles/estilo.js'
-import { Button } from 'react-native-paper';
+// In App.js in a new project
+
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Principal from './screens/Login';
+import Entrou from '../bbnprojeto/screens/Entrou';
+import Login from './screens/Login';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={estilos.container}>
-      <Image 
-        style={estilos.logo} 
-        source={require("./source/images/Logo_Teste.jpg")} 
-      />
-      <View>
-        <Text style={estilos.titulo}>Best Bloco de Notas</Text>
-        <Text style={estilos.subtitulo}>BBN</Text>
-      </View>
-      <View style={estilos.containerLogin}>
-        <Text style={estilos.placeholder}> E-mail:</Text>
-        <TextInput 
-          style={estilos.input} 
-          placeholder="Insira seu e-mail" 
-          placeholderTextColor={'#77778D'} />
-        <Text style={estilos.placeholder}> Senha:</Text>
-        <TextInput
-          style={estilos.input}
-          placeholder="Senha"
-          placeholderTextColor={'#77778D'}
-          secureTextEntry={true}
-        />
-        <View style={{alignItems:'center'}}>
-          <TouchableOpacity>
-            <Text style={estilos.botaoEntrar}>
-            Entrar</Text>
-          </TouchableOpacity>
-        </View>
-        <TouchableOpacity style={estilos.viewEsqueceuSenha}>
-          <Text style={estilos.txtEsqueceuSenha}>Esqueceu a senha?</Text>
-        </TouchableOpacity>
-      </View>
-      <View style={estilos.botaoLink}>
-        <TouchableOpacity>
-          <Text style={estilos.underLineText}>Cadastre-se</Text>
-        </TouchableOpacity>
-      </View>
-      <Button icon="camera" mode="contained">net</Button>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown: false
+  }}>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Entrou" component={Entrou} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
