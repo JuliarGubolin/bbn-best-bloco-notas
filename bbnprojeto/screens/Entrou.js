@@ -1,10 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 import { View, Text } from "react-native";
 
-export default function Entrou() {
-  return (
-    <View>
-      <Text>Entrou</Text>
-    </View>
-  );
+export default class Entrou extends Component {
+    render(){
+        return (
+            <View>
+            <Text style={{fontSize:100}}>Entrou</Text>
+            </View>
+        );
+    }
 }

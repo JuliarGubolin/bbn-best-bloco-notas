@@ -1,22 +1,22 @@
 // In App.js in a new project
 
-import * as React from 'react';
+import React, { Component } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Principal from './screens/Login';
 import Entrou from '../bbnprojeto/screens/Entrou';
 import Login from './screens/Login';
 
 const Stack = createNativeStackNavigator();
 
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false
-  }}>
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Entrou" component={Entrou} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+export default class App extends Component{
+  render(){
+    return (
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Entrou" component={Entrou} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    );
+  }
 }
