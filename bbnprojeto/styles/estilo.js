@@ -7,7 +7,7 @@ export default StyleSheet.create({
       alignItems: "center",
       justifyContent: "center",
       padding: 100,
-      backgroundColor: '#fff'
+      backgroundColor: '#fff',
     },
     input: {
       height: 40,
@@ -96,5 +96,55 @@ export default StyleSheet.create({
       textAlignVertical:'center',
       borderRadius: 4,
       margin: 8
+    },
+    topoCadastroView:{
+      backgroundColor:'#EEEEEE',
+      borderWidth:1, 
+      borderColor:'#DDDDDD',
+      borderTopLeftRadius:5,
+      borderTopRightRadius:5,
+      width: 312.5, 
+      flexDirection:'row'
+    },
+    topoCadastroViewTitulo:{
+      fontWeight: 'bold', 
+      fontSize: 24, 
+      color:'black',
+      textAlign:'center',
+      marginBottom: 8,
+      marginLeft: 8,
+      color:'#000'
+    },
+    containerEntradasCadastroView:{
+      backgroundColor:'#fff', 
+      borderWidth:1, borderColor:'#DDDDDD',
+      width: 312.5
+    },
+    asteriscoEntradasCadastroView:{
+      color:'#f00'
+    },
+    botoesCadastroView:{
+     backgroundColor:'#fff',
+      borderWidth:1, borderColor:'#DDDDDD', 
+      borderBottomLeftRadius:5,
+      borderBottomRightRadius:5, width: 312.5,
+      alignItems:'flex-end', 
+      flexDirection:'row' 
+    },
+    botoesCadastro:{
+      backgroundColor:"#fff", 
+      width:130,
+      margin:8,
+      borderColor:'#DDDDDD',
+      borderWidth:1, 
+      color:'#fff',
+    },
+    botoesCadastroSecundario:{
+      backgroundColor:"#2196F3",
+      margin:8,
+      borderColor:'#DDDDDD',
+      borderWidth:1,
+      width:150,
+      fontSize: 2
     }
   });

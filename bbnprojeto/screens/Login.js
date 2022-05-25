@@ -14,10 +14,6 @@ export default class Login extends Component {
   irCadastro(){
     this.props.navigation.navigate("Cadastro");
   }
-
-
-  
-  
   render(){
     return (
       <View style={estilos.container}>
