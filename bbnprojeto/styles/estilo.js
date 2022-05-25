@@ -60,7 +60,8 @@ export default StyleSheet.create({
       fontWeight: 'bold', 
       fontSize: 15, 
       color:'black', 
-      marginLeft:12
+      marginLeft:12,
+      marginTop:10
     },
     botaoLink:{
       width:'100%', 

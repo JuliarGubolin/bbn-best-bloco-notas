@@ -6,11 +6,16 @@ export default class Login extends Component {
   constructor(props){
     super(props)
     this.irEntrar = this.irEntrar.bind(this);
+    this.irCadastro = this.irCadastro.bind(this);
   }
-
   irEntrar(){
     this.props.navigation.navigate("Entrou");
   }
+  irCadastro(){
+    this.props.navigation.navigate("Cadastro");
+  }
+
+
   
   
   render(){
@@ -48,7 +53,7 @@ export default class Login extends Component {
           </View>
         </View>
         <View style={estilos.botaoLink}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => this.irCadastro()}>
             <Text style={estilos.underLineText}>Cadastre-se</Text>
           </TouchableOpacity>
         </View>
