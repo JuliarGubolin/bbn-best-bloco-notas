@@ -9,6 +9,13 @@ export default StyleSheet.create({
       padding: 100,
       backgroundColor: '#fff',
     },
+    container2: {
+      backgroundColor: "#00f",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: 100,
+      backgroundColor: '#fff',
+    },
     input: {
       height: 40,
       width: 260,
@@ -77,7 +84,7 @@ export default StyleSheet.create({
     txtEsqueceuSenha:{
       color: '#02a9f7'
     },
-    botaoEntrar:{
+    botaoHome:{
       color:'white', 
       backgroundColor:'#2196F3', 
       textAlign:'center', 

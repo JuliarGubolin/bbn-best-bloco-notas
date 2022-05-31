@@ -5,15 +5,19 @@ import estilos from '../styles/estilo.js'
 export default class Login extends Component {
   constructor(props){
     super(props)
-    this.irEntrar = this.irEntrar.bind(this);
+    this.irHome = this.irHome.bind(this);
     this.irCadastro = this.irCadastro.bind(this);
+    this.irEsqueceuSenha = this.irEsqueceuSenha.bind(this);
   }
-  irEntrar(){
-    this.props.navigation.navigate("Entrou");
+  irHome(){
+    this.props.navigation.navigate("Home");
   }
   irCadastro(){
     this.props.navigation.navigate("Cadastro");
   }
+  irEsqueceuSenha(){
+    this.props.navigation.navigate("EsqueceuSenha");
+    }
   render(){
     return (
       <View style={estilos.container}>
@@ -39,13 +43,15 @@ export default class Login extends Component {
             secureTextEntry={true}
           />
           <View style={{alignItems:'center'}}>
-            <TouchableOpacity onPress={() => this.irEntrar()}>
-              <Text style={estilos.botaoEntrar}>
+            <TouchableOpacity onPress={() => this.irHome()}>
+              <Text style={estilos.botaoHome}>
               Entrar</Text>
             </TouchableOpacity>
           </View>
           <View style={estilos.viewEsqueceuSenha}>
-            <Text style={estilos.txtEsqueceuSenha}>Esqueceu a senha?</Text>
+            <TouchableOpacity onPress={() => this.irEsqueceuSenha()}>
+                <Text style={estilos.txtEsqueceuSenha}>Esqueceu a senha?</Text>
+            </TouchableOpacity>
           </View>
         </View>
         <View style={estilos.botaoLink}>
