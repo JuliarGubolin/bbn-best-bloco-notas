@@ -153,5 +153,5 @@ export default StyleSheet.create({
       borderWidth:1,
       width:150,
       fontSize: 2
-    }
+    },
   });
