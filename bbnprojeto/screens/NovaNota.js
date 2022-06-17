@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { View, TextInput, Image, TouchableOpacity, Text } from "react-native";
+import { View, TextInput, TouchableOpacity, Text } from "react-native";
 import estilos from '../styles/estilo.js'
 
 export default class NovaNota extends Component {
 
   render(){
     return (
-        <View style={{flex:1}}>
-            <View style={{flex:1}}>
+        <View style={estilos.viewPrincipalHome}>
+            <View style={estilos.viewPrincipalHome}>
                 <TextInput 
                 placeholder="Título" 
                 placeholderTextColor={'#77778D'} 
@@ -20,9 +20,8 @@ export default class NovaNota extends Component {
                 color={"#000"} />
             </View> 
             <TouchableOpacity onPress={() => console.log()}>
-                <View style={{backgroundColor:"#02a9f7", justifyContent:'flex-end', alignItems:'center'}}>
-                    <Text style={{color:'#fff', fontSize:24, 
-                    fontWeight:'bold', margin:10}}>Salvar</Text>
+                <View style={estilos.viewBotaoSalvarNota}>
+                    <Text style={estilos.textoBotaoSalvar}>Salvar</Text>
                 </View>
                 
             </TouchableOpacity>

@@ -154,4 +154,63 @@ export default StyleSheet.create({
       width:150,
       fontSize: 2
     },
+    ViewitensAnotacoes:{
+      margin:4, 
+      padding: 4, 
+      borderWidth:2, 
+      borderRadius:4, 
+      backgroundColor:"#fff", 
+      borderColor:"#fff"
+    },
+    itemSuperior:{
+      color:"#000", 
+      fontSize:22, 
+      backgroundColor:"#fff", 
+      paddingLeft:4, 
+      paddingTop:4
+    },
+    itemInferior:{
+      color:"#000", 
+      fontSize:14, 
+      backgroundColor:"#fff",
+      paddingLeft:4, 
+      paddingBottom:4
+    },
+    viewBotaoAdicionarNota:{
+      backgroundColor:"#02a9f7", 
+      justifyContent:'flex-end', 
+      alignItems:'center'
+    },
+    textoBotaoAdicionarNota:{
+      color:'#fff', 
+      fontSize:24, 
+      fontWeight:'bold', 
+      margin:10
+    },
+    viewPrincipalHome:{
+      flex:1
+    },
+    viewItensLista:{
+      backgroundColor:"#E1E1E1", 
+      flex:1
+    },
+    viewTituloRecuperarSenha:{
+      flex:1, 
+      flexDirection:'row', justifyContent:'center', alignItems:'center', 
+      marginTop:10, 
+      marginRight:6
+    },
+    viewBotaoSalvarNota:{
+      backgroundColor:"#02a9f7", justifyContent:'flex-end', alignItems:'center'
+    },
+    textoBotaoSalvar:{
+      color:'#fff', 
+      fontSize:24, 
+      fontWeight:'bold', 
+      margin:10
+    },
+    viewTopoCastroView2:{
+      flex:1, 
+      flexDirection:'row', justifyContent:'center', alignItems:'center'
+    }
   });

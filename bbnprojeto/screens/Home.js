@@ -1,7 +1,6 @@
 import React from 'react';
 import {Text, View, FlatList, TouchableOpacity} from 'react-native';
 import estilos from '../styles/estilo.js';
-import {Button, Icon} from 'react-native-paper';
 
 const componentes = [
   {
@@ -31,11 +30,17 @@ const componentes = [
   },
 ];
 
+function Alerta(){
+  alert('Deseja excluir esta nota?');
+}
+
 const Item = ({ title, description }) => (
-    <View style={{margin:4, padding: 4, borderWidth:2, borderRadius:4, backgroundColor:"#fff", borderColor:"#fff"}}>
-      <Text style={{color:"#000", fontSize:22, backgroundColor:"#fff", paddingLeft:4, paddingTop:4}} >{title}</Text>
-      <Text style={{color:"#000", fontSize:14, backgroundColor:"#fff", paddingLeft:4, paddingBottom:4}} >{description}</Text>
+  <TouchableOpacity onPress={() => Alerta()}>
+    <View style={estilos.ViewitensAnotacoes}>
+      <Text style={estilos.itemSuperior} >{title}</Text>
+      <Text style={estilos.itemInferior} >{description}</Text>
     </View>
+    </TouchableOpacity>
 );
 
 export default class App extends React.Component {
@@ -51,19 +56,16 @@ export default class App extends React.Component {
       <Item title={item.title} description={item.description}/>
     );
     return (
-      <View style={{flex:1}}>
-        <View style={{backgroundColor:"#E1E1E1", flex:1}}>
+      <View style={estilos.viewPrincipalHome}>
+        <View style={estilos.viewItensLista}>
         <FlatList 
           data={componentes}
           renderItem={renderItem}
         />
         </View>
         <TouchableOpacity onPress={() => this.irNovaNota()}>
-        <View style={{backgroundColor:"#02a9f7", justifyContent:'flex-end', alignItems:'center'}}>
-          
-                <Text style={{color:'#fff', fontSize:24, 
-                fontWeight:'bold', margin:10}}>+</Text>
-          
+        <View style={estilos.viewBotaoAdicionarNota}>
+          <Text style={estilos.textoBotaoAdicionarNota}>+</Text>
         </View>
         </TouchableOpacity>
       </View>

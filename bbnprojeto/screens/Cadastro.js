@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { View, TextInput, Image, TouchableOpacity, Text } from "react-native";
+import { View, TextInput, Text } from "react-native";
 import estilos from '../styles/estilo.js';
-import {Button, Icon} from 'react-native-paper';
+import {Button} from 'react-native-paper';
 
 export default class Cadastro extends Component {
 constructor(props){
@@ -17,7 +17,7 @@ constructor(props){
     return (
         <View style={estilos.container}>
           <View style={estilos.topoCadastroView}>
-            <View style={{flex:1, flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
+            <View style={estilos.viewTopoCastroView2}>
               <Text style={estilos.topoCadastroViewTitulo}>
                 Cadastro de cliente
                 <Button 
