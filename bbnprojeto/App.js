@@ -3,17 +3,17 @@
 import React, { Component } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { TouchableOpacity, Text } from "react-native";
 import Home from './screens/Home';
 import Login from './screens/Login';
 import Cadastro from './screens/Cadastro';
 import EsqueceuSenha from './screens/EsqueceuSenha';
 import NovaNota from './screens/NovaNota';
-import {Button, icon} from 'react-native-paper';
+
 
 const Stack = createNativeStackNavigator();
 
 export default class App extends Component{
+
   render(){
     return (
       <NavigationContainer>
